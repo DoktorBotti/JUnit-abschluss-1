@@ -1,7 +1,7 @@
 
 public class TerminalTest {
 //content
-  //Tests
+  //Tests r & w in Thomas' version?
 private final static String[] code = new String[]{
 			
 			" wrongCommandWithLeadingWhitespace","Error, whitespace",
