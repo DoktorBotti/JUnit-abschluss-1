@@ -248,6 +248,8 @@ public class Terminal {
 			// TODO invalid find keywords but what error message?
 			//"find keywords ", "Error, invalid characters / whitespace",
 			//"find keywords Drei", "Error, invalid characters ",
+			// TODO schreibt mal rein wie ihr denkt wie man mit invaliden keywords umgehen soll
+			// leerer output oder error?
 			"find keywords ", "Error, empty sets are not allowed as input",
 			"find keywords Drei", "#",
 			/////////////////////////////////////////////////////////////////////////
@@ -266,11 +268,7 @@ public class Terminal {
 			
 			// invalide jaccard anfragen
 			"jaccard a;b; c;d;e b;c;d;e;f", "Error, invalid argument number",
-			
-			/////////////////////////////////////////////////////////////////////////
-			// TODO ist ein Komma hier als Eingabe ok? es ist eig nur zeichen einer menge?
 			"jaccard a,b b,c", "Error, invalid characters",
-			/////////////////////////////////////////////////////////////////////////
 
 			// similarity
 			"similarity article1,article2", "0.500\n",
@@ -324,6 +322,7 @@ public class Terminal {
 			
 			// TODO direct print conference --> not clear with dot at the end?
 			// TODO what validations should be implemented???
+			// TODO Meinungen???
 			"direct print conference ieee:Sergey Brin,,,"+
 			"The Anatomy of a Large-Scale Hypertextual Web Search"+
 			" Engine,WWW,Brisbane Australia,1998",
