@@ -248,7 +248,7 @@ public class Terminal {
 			// TODO invalid find keywords but what error message?
 			//"find keywords ", "Error, invalid characters / whitespace",
 			//"find keywords Drei", "Error, invalid characters ",
-			"find keywords ", "Error, empty sets are not allowed as input\n",
+			"find keywords ", "Error, empty sets are not allowed as input",
 			"find keywords Drei", "#",
 			/////////////////////////////////////////////////////////////////////////
 
@@ -260,7 +260,7 @@ public class Terminal {
 			
 			/////////////////////////////////////////////////////////////////////////
 			// TODO Angabe der leeren Mengen--> nicht erlaubt
-			"jaccard ; ;", "Error, empty sets are not allowed as input\n", 
+			"jaccard ; ;", "Error, empty sets are not allowed as input", 
 			"jaccard a b", "0.000\n",
 			/////////////////////////////////////////////////////////////////////////
 			
