@@ -251,7 +251,7 @@ public class Terminal {
 			// TODO schreibt mal rein wie ihr denkt wie man mit invaliden keywords umgehen soll
 			// leerer output oder error?
 			"find keywords ", "Error, empty sets are not allowed as input",
-			"find keywords Drei", "#",
+			"find keywords Drei", "Error, invalid keyword",
 			/////////////////////////////////////////////////////////////////////////
 
 			// jaccard
@@ -261,8 +261,9 @@ public class Terminal {
 			"jaccard wow;hi;zwei;droelf;sans;eso hi;droelf;es;desto", "0.250\n",
 			
 			/////////////////////////////////////////////////////////////////////////
-			// TODO Angabe der leeren Mengen--> nicht erlaubt
-			"jaccard ; ;", "Error, empty sets are not allowed as input", 
+			// TODO Angabe der leeren Mengen--> bei jaccard explizit beschrieben (A∪B =∅)
+			// allerdings ist die Angabe der leeren Menge noch unbekannt
+			"jaccard ; ;", "1\n", 
 			"jaccard a b", "0.000\n",
 			/////////////////////////////////////////////////////////////////////////
 			
@@ -296,6 +297,8 @@ public class Terminal {
 			// wrong h index of authors
 			"h-index Alber Einstein", "Error, author not valid",
 			"h-index 123 Einstein", "Error, author not valid",
+			"h-index Einstein", "Error, invalid number of arguments",
+			"h-index ", "Error, invalid number of arguments / empty input",
 			
 			// valid coAuthors
 			"coauthors of Albert Einstein","#Marie Curie Niels Bohr",
@@ -304,6 +307,8 @@ public class Terminal {
 			
 			// invalid coAuthors
 			"coauthors of Alber Einstein","Error, author not listed",
+			"coauthors of Einstein","Error, author not listed / invalid input",
+			"coauthors of ","Error, invalid input / author not listed",
 			
 			/////////////////////////////////////////////////////////////
 			// TODO ist die reihenfolge relevant? die aufgabenstellung gibt keine auskunft
