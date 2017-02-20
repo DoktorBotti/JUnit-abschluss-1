@@ -287,6 +287,8 @@ public class Terminal {
 			// wrong direct h index
 			"direct h-index 17,3;1;5", "Error, wrong characters",
 			"direct h-index 17;drei;1;5", "Error, wrong characters",
+			"direct h-index 17;-3;1;5", "Error, negative numbers are not allowed",
+			"direct h-index ", "Error, empty sets are not allowed",
 
 			// h index of authors
 			"h-index Albert Einstein", "2\n", 
