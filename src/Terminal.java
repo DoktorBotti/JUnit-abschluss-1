@@ -260,15 +260,13 @@ public class Terminal {
 			"jaccard a;b;c;d;e;f;g;h;i;j;h b;c;d;e;f", "0.500\n",
 			"jaccard wow;hi;zwei;droelf;sans;eso hi;droelf;es;desto", "0.250\n",
 			
-			/////////////////////////////////////////////////////////////////////////
-			// TODO Angabe der leeren Mengen--> bei jaccard explizit beschrieben (A∪B =∅)
-			// allerdings ist die Angabe der leeren Menge noch unbekannt
-			"jaccard ; ;", "1\n", 
+			///////////////////////////////////////////////////////////////////////// 
 			"jaccard a b", "0.000\n",
 			/////////////////////////////////////////////////////////////////////////
 			
 			// invalide jaccard anfragen
 			"jaccard a;b; c;d;e b;c;d;e;f", "Error, invalid argument number",
+			"jaccard ; ;", "Error, invalid args number/empty sets not allowed at direct input",
 			"jaccard a,b b,c", "Error, invalid characters",
 
 			// similarity
