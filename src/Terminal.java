@@ -327,9 +327,7 @@ public class Terminal {
 			"foreign citations of Albert","Error, argument number wrong", 
 			"foreign citations of Albert 123","Error, author not valid", 
 			
-			// TODO direct print conference --> not clear with dot at the end?
-			// TODO what validations should be implemented???
-			// TODO Meinungen???
+			// direct print conference 
 			"direct print conference ieee:Sergey Brin,,,"+
 			"The Anatomy of a Large-Scale Hypertextual Web Search"+
 			" Engine,WWW,Brisbane Australia,1998",
@@ -377,6 +375,94 @@ public class Terminal {
 			"The Anatomy of a Large-Scale Hypertextual Web Search"+
 			" Engine,WWW,Brisbane Australia,1998",
 			"Error, invalid number of arguments",
+			
+			"direct print conference chicago:Sergey Brin,Sergey Brin,Harald Lesch,"+
+	                "The Anatomy of a Large-Scale Hypertextual Web Search"+
+	                " Engine,WWW,Brisbane Australia,1998", "Error, duplicate Author",
+	                
+	                "direct print conference chicago:Sergey Brin,Harald Lesch,Sergey Brin,"+
+	                "The Anatomy of a Large-Scale Hypertextual Web Search"+
+	                " Engine,WWW,Brisbane Australia,1998", "Error, duplicate Author",
+	                
+	                "direct print conference chicago:Sergey Brin,Lawrence Page,Harald Lesch,"+
+	                "The Anatomy of a Large-Scale Hypertex;tual Web Search"+
+	                " Engine,WWW,Brisbane Australia,1998","Error, wrong format of title",
+	                
+	                "direct print conference chicago:Sergey Brin,Lawrence Page,Harald Lesch,"+
+	                "The Anatomy of a Large-Scale Hypertextual Web Search"+
+	                " Engine,WW;W,Brisbane Australia,1998","Error, wrong format of series name",
+	                
+	                "direct print conference chicago:Sergey Brin,Lawrence Page,Harald Lesch,"+
+	                "The Anatomy of a Large-Scale Hypertextual Web Search"+
+	                " Engine,WWW,Brisbane Austra;lia,1998","Error, wrong format of location",
+			
+	                "direct print conference chicago:Sergey Brin,Lawrence Page,Harald Lesch,"+
+	                "The Anatomy of a Large-Scale Hypertextual Web Search"+
+	                " Engine,WWW,Brisbane Australia,1998,","Error, wrong format of year / invalid nr of args",
+	                
+	                "direct print conference ieee:Sergey Brin,Sergey Brin,Harald Lesch,"+
+	                "The Anatomy of a Large-Scale Hypertextual Web Search"+
+	                " Engine,WWW,Brisbane Australia,1998", "Error, duplicate Author",
+	                        
+	                "direct print conference ieee:Sergey Brin,Harald Lesch,Sergey Brin,"+
+	                "The Anatomy of a Large-Scale Hypertextual Web Search"+
+	                " Engine,WWW,Brisbane Australia,1998", "Error, duplicate Author",
+	                        
+	                "direct print conference ieee:Sergey Brin,Lawrence Page,Harald Lesch,"+
+	                "The Anatomy of a Large-Scale Hypertex;tual Web Search"+
+	                " Engine,WWW,Brisbane Australia,1998","Error, wrong format of title",
+	                        
+	                "direct print conference ieee:Sergey Brin,Lawrence Page,Harald Lesch,"+
+	                "The Anatomy of a Large-Scale Hypertextual Web Search"+
+	                " Engine,WW;W,Brisbane Australia,1998","Error, wrong format of series name",
+	                        
+	                "direct print conference ieee:Sergey Brin,Lawrence Page,Harald Lesch,"+
+	                "The Anatomy of a Large-Scale Hypertextual Web Search"+
+	                " Engine,WWW,Brisbane Austra;lia,1998","Error, wrong format of location",
+	             
+	                "direct print conference ieee:Sergey Brin,Lawrence Page,Harald Lesch,"+
+	                "The Anatomy of a Large-Scale Hypertextual Web Search"+
+	                " Engine,WWW,Brisbane Australia,1998;","Error, wrong format of year",
+	                
+	                "direct print journal chicago:Sergey Brin,Sergey Brin,Harald Lesch,"+
+	                "The Anatomy of a Large-Scale Hypertextual Web Search"+
+	                " Engine,WWW,1998", "Error, duplicate Author",
+	                        
+	                "direct print journal chicago:Sergey Brin,Harald Lesch,Sergey Brin,"+
+	                "The Anatomy of a Large-Scale Hypertextual Web Search"+
+	                " Engine,Comm. of the ACM,1998", "Error, duplicate Author",
+	                        
+	                "direct print journal chicago:Sergey Brin,Lawrence Page,Harald Lesch,"+
+	                "The Anatomy of a Large-Scale Hypertex;tual Web Search"+
+	                " Engine,WWW,1998","Error, wrong format of title",
+	                        
+	                "direct print journal chicago:Sergey Brin,Lawrence Page,Harald Lesch,"+
+	                "The Anatomy of a Large-Scale Hypertextual Web Search"+
+	                " Engine,WW;W,1998","Error, wrong format of journal name",
+	                        
+	                "direct print journal chicago:Sergey Brin,Lawrence Page,Harald Lesch,"+
+	                "The Anatomy of a Large-Scale Hypertextual Web Search"+
+	                " Engine,WWW,19j98","Error, wrong format of year",
+	                        
+	                "direct print journal ieee:Sergey Brin,Sergey Brin,Harald Lesch,"+
+	                "The Anatomy of a Large-Scale Hypertextual Web Search"+
+	                " Engine,WWW,1998", "Error, duplicate Author",
+	                                                            
+	                "direct print journal ieee:Sergey Brin,Harald Lesch,Sergey Brin,"+
+	                "The Anatomy of a Large-Scale Hypertextual Web Search"+
+	                " Engine,Comm. of the ACM,1998", "Error, duplicate Author",
+	                                
+	                "direct print journal ieee:Sergey Brin,Lawrence Page,Harald Lesch,"+
+	                "The Anatomy of a Large-Scale Hypertex;tual Web Search"+
+	                " Engine,WWW,1998","Error, wrong format of title",
+	                                
+	                "direct print journal ieee:Sergey Brin,Lawrence Page,Harald Lesch,"+
+	                "The Anatomy of a Large-Scale Hypertextual Web Search"+
+	                " Engine,WW;W,Brisbane Australia,1998","Error, wrong format of series name",
+	                                
+	                "direct print journal ieee:Sergey Brin,Lawrence Page,Harald Lesch,"+
+	                "The Anatomy of a Large-Scale Hypertextual Web Search"+
+	                " Engine,WWW,199l8","Error, wrong format of year",
 					
 			// direct print journal
 			"direct print journal ieee:Edsger Dijkstra,,,Go To Statement Considered Harmful,"+
