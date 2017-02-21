@@ -455,8 +455,8 @@ public class Terminal {
 	                " Engine,WWW,1998","Error, wrong format of title",
 	                                
 	                "direct print journal ieee:Sergey Brin,Lawrence Page,Harald Lesch,"+
-	                "The Anatomy of a Large-Scale Hypertextual Web Search"+
-	                " Engine,WW;W,Brisbane Australia,1998","Error, wrong format of series name",
+                        "The Anatomy of a Large-Scale Hypertextual Web Search"+
+                        " Engine,WW;W,1998","Error, wrong format of journal name",
 	                                
 	                "direct print journal ieee:Sergey Brin,Lawrence Page,Harald Lesch,"+
 	                "The Anatomy of a Large-Scale Hypertextual Web Search"+
